@@ -1,0 +1,257 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red;  */
+}
+
+/* ============================================================== Typography ========================================================= */
+
+/* font-family: 'Pacifico', cursive; */
+
+h1 {
+    font-size: 5rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.title__span--red {
+    font-size: 5rem;
+    color: rgb(255, 0, 0);
+}
+
+.subtitle,
+.subtitle__span--red {
+    font-size: 2rem;
+}
+
+.subtitle__span--red {
+    color: rgb(255, 0, 0);
+}
+
+.nav__list__item {
+    border-radius: 60px;
+    /* border: 1px solid gold; */ 
+}
+
+.nav__list__item--link {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+blockquote {
+    font-size: 2.5rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.para__quote--small {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.text__main {
+    font-size: 2rem;
+}
+
+/* ============================================================== Header ========================================================= */
+
+header {
+    width: 90%;
+    margin: 0 auto 8em auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 10px black solid;
+    align-items: baseline;
+}
+
+/* ==================================== Title ========================= */
+
+.title-container {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+/* ==================================== Nav ========================= */
+
+nav {
+    width: 40%;
+    margin-right: 1em;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav__list__item {
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.nav__list__item--link {
+    border-radius: 60px;
+    height: 100%;
+    /* border: 1px solid blue;
+    width: 100%; */
+    padding: 0.5em;
+}
+
+.nav__list__item--link:hover {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.1;
+    color:rgb(248, 244, 244);
+    /* color: rgb(250, 0, 0); */
+}
+
+/* =============================================================== Home ================================================================= */
+
+/* ==================================== Main ========================= */
+
+.main__intro {
+    width: 90%;
+    display: flex;
+    border: 10px solid gold;
+}
+
+.img__container {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto 2em auto;
+    border-radius: 10px;
+}
+
+.img__container--large {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.quote__container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+blockquote {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.para__quote--small {
+    width: 100%;
+}
+
+.text__container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.text__main {
+    margin-bottom: 0;
+}
+
+/* ============================ Grid ========================== */
+
+.card__grid--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.section__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 1100px;
+    
+}
+
+.card {
+    position: relative;
+    width: 309px;
+    height: 309px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+.card__container:hover {
+    transform: rotateY(180deg);
+}
+
+.card__container__imgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__img--medium {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.card__contents {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.card_contents--text {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #fe0061, #ffeb3b);
+    transform: translatez(100px);
+}
+
+.card__text__title--medium {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content__para {
+    color: #fff;
+    font-size: 20px;
+}
