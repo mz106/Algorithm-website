@@ -1,6 +1,6 @@
 
-const intOne = 452;
-const intTwo = 452;
+const intOne = 649;
+const intTwo = 143;
 
 function oneBigger(par1, par2) {
     console.log('function1')
